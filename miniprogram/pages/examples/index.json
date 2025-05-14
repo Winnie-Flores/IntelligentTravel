@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "路线查询",
+  "usingComponents": {
+    "cloud-tip-modal": "/components/cloudTipModal/index"
+  }
+}

@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="main">
+    <view class="title font_title_1">问津茶旅</view>
+    <view class="sub_title">
+      欢迎使用问津茶旅！
+    </view>
+    <image class="main-page" src="../../images/main-page.jpg" mode="aspectFit"></image> 
+    <view class="button" bind:tap="discoverCloud">路线查询</view>
+    <view class="button">AR虚拟导览</view>
+  </view>
+</view>
