@@ -1,0 +1,18 @@
+<!--pages/favoriteList/favoriteList.wxml-->
+<text>pages/favoriteList/favoriteList.wxml</text>
+<view class="favorite-container">
+  <view class="page-title">我的收藏</view>
+  
+  <view wx:if="{{favorites.length === 0}}" class="empty-tip">
+    暂无收藏内容，点击文章中的★图标开始收藏吧～
+  </view>
+
+  <block wx:else>
+    <view class="favorite-item" wx:for="{{favorites}}" wx:key="id" bindtap="goToArticle">
+      <view class="item-title">{{item.title}}</view>
+      <view class="delete-btn" bindtap="deleteFavorite">
+        ×
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,12 +1,65 @@
 <!--index.wxml-->
 <view class="container">
   <view class="main">
-    <view class="title font_title_1">问津茶旅</view>
+    <image class="main-page" src="https://tvax3.sinaimg.cn/large/008899gFgy1i1gcxz1s1kj316i0qnn4c.jpg"   mode="aspectFit" style="margin: 0 auto;width: 100%;"></image> 
     <view class="sub_title">
       欢迎使用问津茶旅！
     </view>
-    <image class="main-page" src="../../images/main-page.jpg" mode="aspectFit"></image> 
-    <view class="button" bind:tap="discoverCloud">路线查询</view>
+    <view class="icon-container">
+  <!-- 第一行 -->
+  <view class="icon-row">
+    <view class="icon-item" bindtap="navigateToScenic">
+      <image src="https://picsum.photos/seed/scenic/80/80" class="icon-image" mode="aspectFit" />
+      <text class="icon-text">景区</text>
+    </view>
+    <view class="icon-item" bindtap="navigateToHotel">
+      <image src="https://picsum.photos/seed/hotel/80/80" class="icon-image" mode="aspectFit" />
+      <text class="icon-text">酒店</text>
+    </view>
+    <view class="icon-item" bindtap="navigateToRoute">
+      <image src="https://picsum.photos/seed/route/80/80" class="icon-image" mode="aspectFit" />
+      <text class="icon-text">路线</text>
+    </view>
+    <view class="icon-item" bindtap="navigateToMall">
+      <image src="https://picsum.photos/seed/mall/80/80" class="icon-image" mode="aspectFit" />
+      <text class="icon-text">文创商城</text>
+    </view>
+    <view class="icon-item" bindtap="navigateToShow">
+      <image src="https://picsum.photos/seed/show/80/80" class="icon-image" mode="aspectFit" />
+      <text class="icon-text">文艺汇演</text>
+    </view>
+  </view>
+  
+  <!-- 第二行 -->
+  <view class="icon-row">
+    <view class="icon-item" bindtap="navigateToStrategy">
+      <image src="https://picsum.photos/seed/strategy/80/80" class="icon-image" mode="aspectFit" />
+      <text class="icon-text">城市攻略</text>
+    </view>
+    <view class="icon-item" bindtap="navigateToFood">
+      <image src="https://picsum.photos/seed/food/80/80" class="icon-image" mode="aspectFit" />
+      <text class="icon-text">美食</text>
+    </view>
+    <view class="icon-item" bindtap="navigateToHeritage">
+      <image src="https://picsum.photos/seed/heritage/80/80" class="icon-image" mode="aspectFit" />
+      <text class="icon-text">红色文化</text>
+    </view>
+    <view class="icon-item" bindtap="navigateToFestival">
+      <image src="https://picsum.photos/seed/festival/80/80" class="icon-image" mode="aspectFit" />
+      <text class="icon-text">节庆活动</text>
+    </view>
+    <view class="icon-item" bindtap="navigateToService">
+      <image src="https://picsum.photos/seed/service/80/80" class="icon-image" mode="aspectFit" />
+      <text class="icon-text">游客服务</text>
+    </view>
+  </view>
+
+</view>    
+    <view>
+
+      <text class="functitle">旅游出行</text>
+    </view>
+    <view class="button" bind:tap="discoverCloud">路线规划</view>
     <view class="button">AR虚拟导览</view>
   </view>
 </view>

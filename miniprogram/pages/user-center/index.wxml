@@ -12,23 +12,30 @@
       </block>
     </view>
     <view class="settings_container">
-      <!-- <view class="setting_item">
+      <view class="setting_item" bindtap="goToFavoriteList">
         <view class="left">
-          <image class="setting_icon" src="../../images/icons/setting.svg" />
+          <image class="setting_icon" src="../../images/arrow.svg" />
+          <view class="setting_text">收藏夹</view>
+        </view>
+        <image class="arrow_icon" src="../../images/arrow.svg" />
+      </view> 
+       <view class="setting_item">
+        <view class="left">
+          <image class="setting_icon" src="../../images/arrow.svg" />
           <view class="setting_text">个人信息设置</view>
         </view>
         <image class="arrow_icon" src="../../images/arrow.svg" />
-      </view> -->
-      <!-- <view class="setting_item">
+      </view> 
+       <view class="setting_item">
         <view class="left">
-          <image class="setting_icon" src="../../images/icons/question.svg" />
+          <image class="setting_icon" src="../../images/arrow.svg" />
           <view class="setting_text">常见问题</view>
         </view>
         <image class="arrow_icon" src="../../images/arrow.svg" />
-      </view> -->
+      </view> 
       <view class="setting_item">
         <view class="left">
-          <image class="setting_icon" src="../../images/icons/customer-service.svg" />
+          <image class="setting_icon" src="../../images/arrow.svg" />
           <!-- <view class="setting_text">联系客服</view> -->
           <button open-type="contact" class="contact-button">
             联系客服
@@ -38,7 +45,7 @@
       </view>
       <view class="setting_item" bind:tap="gotoWxCodePage">
         <view class="left">
-          <image class="setting_icon" src="../../images/icons/share.svg" />
+          <image class="setting_icon" src="../../images/arrow.svg" />
           <view class="setting_text">分享小程序</view>
         </view>
         <image class="arrow_icon" src="../../images/arrow.svg" />

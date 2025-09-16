@@ -1,0 +1,94 @@
+<!--pages/article2/article2.wxml-->
+<!--pages/article3/article3.wxml-->
+
+<view class="article-container">
+  <!-- 文章标题 -->
+  <view class="article-title">文化｜新洲红色文化</view>
+  <view class="divider"></view>
+  <!-- 导语部分 -->
+  <view class="article-lead">
+    <text>  这条徒步线路好评如潮，一路都有徒步者感叹“好出摊”（新洲话：好舒服），负氧离子超标，山水绝美，简直就是一趟深呼吸的绿肺之旅。\n</text>
+    <text>  </text>
+  </view>
+
+  <!-- 分隔线 -->
+  <view class="divider"></view>
+  <image 
+        class="homestay-image" 
+        src="https://tvax2.sinaimg.cn/large/008899gFgy1i1ghetu2gej31xh2mjnpd.jpg" 
+        mode="widthFix" 
+        lazy-load 
+      />
+      <view class="article-lead">
+         <text></text>
+      </view>
+  <!-- culture列表 -->
+  <block wx:for="{{culture}}" wx:key="id">
+    <view class="culture-item">
+      <!-- culture标题 -->
+      <view class="culture-title">{{item.title}}</view>
+      
+      <!-- culture图片 
+      <image 
+        class="culture-image" 
+        src="{{item.image}}" 
+        mode="widthFix" 
+        lazy-load 
+      />
+      -->
+      <text user-select="true">{{item.words}}</text>
+
+      <!-- 分隔线 -->
+      <view class="divider"></view>
+    </view>
+  </block>
+
+  <!-- 文章底部信息 -->
+  <view class="article-footer">
+    <text>（部分图文源网络，侵删）</text>
+    <text></text>
+    <text></text>
+  </view>
+</view>
+
+<!--
+<view class="route">
+    <view class="subtitle">文化｜新洲红色文化</view>
+    <image src="https://tvax2.sinaimg.cn/large/008899gFgy1i1ghetu2gej31xh2mjnpd.jpg" mode="aspectFit"></image>  
+    <view class="stop">
+      <view class="stopNumber">第一站：问津书院</view>
+      <view class="introduction" style="white-space: pre-wrap;">  公元前489年，孔子周游列国，至新洲未名河畔，使子路问津。这里是我国唯一以《论语》典故而命名的书院，作为中国最古老的“大学”，成为儒学文化教育圣地。
+  参观书院的大成殿、讲堂等古建筑，感受浓厚的儒家文化氛围，了解孔子使子路问津的典故以及书院的千年历史传承。</view>
+    </view>
+    <view class="stop">
+      <view class="stopNumber">第二站：城楼寨</view>
+      <view class="introduction" style="white-space: pre-wrap;">  位于新洲区旧街，蕲黄四十八寨之一，大别山峻岭环视，2020年8月入选《武汉市第一批地名文化遗产保护名录》。山势蜿蜒伸展、层峦复涧、秀谷相迭，现已发展成为茶叶生产、休闲观光、土特产销售为一体的产业基地。
+  在这里科研欣赏蜿蜒的山势和秀丽的茶园风光，参观茶叶生产加工过程，品尝当地的特色茶叶，深入体验茶文化。</view>
+    </view>
+    <view class="stop">
+      <view class="stopNumber">第三站：红色旅游线</view>
+      <view class="introduction" style="white-space: pre-wrap;">  红色旅游线穿越新洲东部大别山区，连接贯通新洲区问津书院、道观河、将军山等多处红色遗迹和绿色生态、禅宗文化旅游景点景区。沿着蜿蜒曲折的柏油马路，漫山遍野的绿，自然生长的白（桦林），格桑花、柿子树、板栗树，道路两旁的山涧流水，依山而建的古建新舍，映衬出自然村落的美……
+  沿着新洲区大别山老革命区红色旅游公路前行，能够参观鄂东抗日挺进中队旧址、将军山红色文化陈列室、革命烈士纪念碑等红色教育点位，接受爱国主义和革命传统教育。</view>
+    </view>
+    <view class="stop">
+      <view class="stopNumber">第四站：稻田记忆景区</view>
+      <view class="introduction" style="white-space: pre-wrap;">  位于新洲区旧街街，占地面积1011亩，以现实稻田实景为基础，为游客提供农、文、旅一体化的体验。
+  在这里，漫步田间，通过景区的展示和体验项目，了解一粒米的“前世今生”，感受春耕、夏耘、秋收、冬藏的农耕文化。</view>
+    </view>
+    <view class="stop">
+      <view class="stopNumber">第五站：道观河风景区</view>
+      <view class="introduction" style="white-space: pre-wrap;">  位于大别山余脉南麓，是湖北省第一批定点旅游单位，也是新洲东部地区党组织的实际发祥地。区域内72座山峰层峦叠嶂，道观河水库一望无际，山随湖走，湖依山转，有着丰富的山水资源和红色文化资源。
+  在这里可以欣赏由72座秀丽山峰和浩大潭湖构成的山水胜景，可沿湖漫步或乘船游览，感受自然风光的优美。</view>
+    </view>
+    <view class="stop">
+      <view class="stopNumber">第六站：将军山</view>
+      <view class="introduction" style="white-space: pre-wrap;">  位于新洲东部徐古街，山上怪石林立，幽泉不绝，植被茂盛，动植物种类繁多。绿色林海与红色胜迹相互交融，自然村落山水田园融为一体，风景秀丽独特。山上的将军洞，是进行革命传统教育的基地。
+  攀登将军山，欣赏四周群山叠嶂、清溪缠绕的美景，参观山上的将军洞等红色胜迹，感受红色文化与自然风光的交融。</view>
+    </view>
+    <view class="stop">
+      <view class="stopNumber">第七站：花朝河湾景区</view>
+      <view class="introduction" style="white-space: pre-wrap;">  景区以流行于鄂东的“花朝文化”为品牌基石，融花神文化、情缘文化、民俗文化于一体，有“赏花亲水”、“游船篝火”、“实景演艺”、“酒店民居”、“垂钓采摘”、“亲子乐活”、“生态科普”、“房车露营”等八大旅游产品板块。
+  在这里可以欣赏以花朝文化为主题的景观，了解花神文化、情缘文化和民俗文化，若恰逢花朝节期间，还可参与丰富多彩的民俗活动。。</view>
+    </view>
+  </view>
+  -->

@@ -1,4 +1,4 @@
-// pages/arfunc/arfunc.js
+// pages/article4/article4.js
 Page({
 
   /**

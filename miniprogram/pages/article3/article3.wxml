@@ -1,0 +1,50 @@
+<!--pages/article3/article3.wxml-->
+
+<view class="article-container">
+  <!-- 文章标题 -->
+  <view class="article-title">徒步 | 快来GET徒步路线</view>
+  <view class="divider"></view>
+  <!-- 导语部分 -->
+  <view class="article-lead">
+    <text>  这条徒步线路好评如潮，一路都有徒步者感叹“好出摊”（新洲话：好舒服），负氧离子超标，山水绝美，简直就是一趟深呼吸的绿肺之旅。\n</text>
+    <text>  </text>
+  </view>
+
+  <!-- 分隔线 -->
+  <view class="divider"></view>
+  <image 
+        class="hiking-image" 
+        src="https://mmbiz.qpic.cn/mmbiz_jpg/B11cictDsNqMN5zfkib8woR7iclESZG4GAjSHbKicvaJqor8a9FXArqPrQDkBOuT31t8hnibtILPFu4BIlibh9BS0hzA/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1" 
+        mode="widthFix" 
+        lazy-load 
+      />
+      <view class="article-lead">
+         <text></text>
+      </view>
+  <!-- hiking列表 -->
+  <block wx:for="{{hiking}}" wx:key="id">
+    <view class="hiking-item">
+      <!-- hiking标题 -->
+      <view class="hiking-title">{{item.title}}</view>
+      
+      <!-- hiking图片 -->
+      <image 
+        class="hiking-image" 
+        src="{{item.image}}" 
+        mode="widthFix" 
+        lazy-load 
+      />
+      <text>{{item.words}}</text>
+
+      <!-- 分隔线 -->
+      <view class="divider"></view>
+    </view>
+  </block>
+
+  <!-- 文章底部信息 -->
+  <view class="article-footer">
+    <text>（部分图文源网络，侵删）</text>
+    <text></text>
+    <text></text>
+  </view>
+</view>

@@ -11,7 +11,12 @@ Page({
     title:"",
     content:""
   },
-
+  goToFavoriteList() {
+    console.log('点击了收藏夹按钮'); // 检查控制台是否输出
+    wx.navigateTo({
+      url: '/pages/favoriteList/favoriteList',
+    });
+  },
   getOpenId() {
     wx.showLoading({
       title: '',

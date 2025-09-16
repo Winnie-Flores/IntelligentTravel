@@ -3,8 +3,14 @@
     "pages/index/index",
     "pages/examples/index",
     "pages/user-center/index",
-    "pages/arfunc/arfunc",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/article1/article1",
+    "pages/article2/article2",
+    "pages/article3/article3",
+    "pages/article4/article4",
+    "pages/article5/article5",
+    "pages/article6/article6",
+    "pages/favoriteList/favoriteList"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

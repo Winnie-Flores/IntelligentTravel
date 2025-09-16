@@ -1,0 +1,69 @@
+
+<view class="article-container">
+  <!-- 文章标题 -->
+  <view class="article-header">
+  <view class="article-title">旅游|相约新洲，民宿线路攻略</view>
+  <view 
+    class="favorite-btn" 
+    bindtap="toggleFavorite"
+  >
+    <image 
+      src="{{isFavorite ? '../../images/icons/goods-active.png' : '../../images/icons/goods.png'}}" 
+      mode="widthFix" 
+      style="width: 40rpx; height: 40rpx;"
+    />
+  </view>
+</view>
+  <view class="divider"></view>
+  <!-- 导语部分 -->
+  <view class="article-lead">
+    <text>  离家不远，离心很近。\n在武汉周边的新洲区，星罗棋布着各种风格特色的别致民宿，让人想背起行囊，说走就走。\n</text>
+    <text>  来武汉，住民宿，自由又温情。\n在这个一年中最美好的季节，武汉市新洲区文化和旅游局 为你整理出4家新洲精品旅游民宿，收藏起来，一点点，去感受四季变换的风景。</text>
+  </view>
+
+  <!-- 分隔线 -->
+  <view class="divider"></view>
+  <image 
+        class="homestay-image" 
+        src="https://mmbiz.qpic.cn/mmbiz_jpg/AEJLvEC0zOoEJNOXB2UZL7sT3QmicLria3FPOpqsuaVCz7of5cKlaNOWeNZIkkU1RvVaqWDgTPAeKFwkyic7a5x2g/640?wx_fmt=jpeg&tp=wxpic&wxfrom=5&wx_lazy=1" 
+        mode="widthFix" 
+        lazy-load 
+      />
+      <view class="article-lead">
+         <text>说走就走，其实很简单\n离开都市的喧嚣，去不远处的新洲找一个安静古朴的民宿住住</text>
+      </view>
+  <!-- 民宿列表 -->
+  <block wx:for="{{homestays}}" wx:key="id">
+    <view class="homestay-item">
+      <!-- 民宿标题 -->
+      <view class="homestay-title">{{item.title}}</view>
+      
+      <!-- 民宿图片 -->
+      <image 
+        class="homestay-image" 
+        src="{{item.image}}" 
+        mode="widthFix" 
+        lazy-load 
+      />
+      <text>{{item.words}}</text>
+      <!-- 民宿详情 -->
+      <view class="homestay-desc">
+        <text>费用：{{item.price}}\n</text>
+        <text>房型：{{item.roomType}}\n</text>
+        <text>地址：{{item.address}}\n</text>
+        <text>周边景区：{{item.aroundScenic}}\n</text>
+        <text>民宿特色：{{item.feature}}\n</text>
+        <text>预定电话：{{item.phone}}\n</text>
+      </view>
+      
+      <!-- 分隔线 -->
+      <view class="divider"></view>
+    </view>
+  </block>
+
+  <!-- 文章底部信息 -->
+  <view class="article-footer">
+    <text>（部分图文源网络，侵删）</text>
+ 
+  </view>
+</view>
